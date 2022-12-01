@@ -1,4 +1,7 @@
 import os
+import scipy
+from scipy.io import wavfile
+
 
 '''
     Read all files in the user-defined file directory!
