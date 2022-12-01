@@ -1,7 +1,7 @@
 import os
 import scipy
 from scipy.io import wavfile
-
+from AudioRead import AudioStore
 
 '''
     Read all files in the user-defined file directory!
@@ -17,13 +17,11 @@ Web_file = []
 
 for file in files: #遍历文件夹
      if not os.path.isdir(file): #判断是否是文件夹，不是文件夹才打开
-          if  os.path.splitext(file)[-1] in ['.a',]:
+          if  os.path.splitext(file)[-1] in ['.wav',]:
+               AudioStore(file)
+          elif os.path.splitext(file) in ['.mp4',]:
 
-          elif
-          f = open(File_directory +"/"+file); #打开文件
-          iter_f = iter(f); #创建迭代器
-          str = ""
-          for line in iter_f: #遍历文件，一行行遍历，读取文本
-              str = str + line
-          s.append(str) #每个文件的文本存到list中
-print(s) #打印结果
+          elif os.path.splitext(file) in ['.mp4',]:
+
+          else:
+
